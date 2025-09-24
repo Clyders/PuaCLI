@@ -1,0 +1,39 @@
+{
+  "name": "puacli",
+  "version": "1.0.0",
+  "description": "CLI to analyze used vs unused dependencies in Node.js projects with optional JSON output and SQLite logging.",
+  "bin": {
+    "pua": "./cli.js"
+  },
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node ./cli.js",
+    "dev": "node ./cli.js --help",
+    "test": "node -e \"console.log('No tests yet')\""
+  },
+  "keywords": [
+    "cli",
+    "dependencies",
+    "analysis",
+    "unused",
+    "monorepo"
+  ],
+  "author": "Clyders",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@babel/parser": "^7.25.3",
+    "@babel/traverse": "^7.25.3",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fast-glob": "^3.3.2",
+    "semver": "^7.6.3",
+    "undici": "^6.19.8"
+  },
+  "optionalDependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
