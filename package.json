@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "CLI to analyze used vs unused dependencies in Node.js projects with optional JSON output and SQLite logging.",
   "bin": {
-    "pua": "./cli.js"
+    "pua": "cli.js"
   },
   "type": "module",
   "main": "src/index.js",
